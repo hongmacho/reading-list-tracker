@@ -1,5 +1,4 @@
 import { bookRepository } from "@/src/repositories/book.repository";
-import { quoteRepository } from "@/src/repositories/quote.repository";
 import { NextResponse } from "next/server";
 
 export async function GET() {
@@ -21,7 +20,6 @@ export async function GET() {
 
     const rows = [];
     for (const book of books) {
-      const quoteCount = await quoteRepository.countByBookId(book.id);
       rows.push([
         book.id,
         book.title || "",

@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"cd projects/reading-list-tracker && echo \\\"── README: $([ -f README.md ] && echo \\\"있음 $(wc -c < README.md | tr -d ' ')B\\\" || echo 없음)\\\" && echo \\\"── remote: $(git remote -v 2>/dev/null | h...",
+  "error": "Exit code 1\n(eval):cd:1: no such file or directory: projects/reading-list-tracker",
+  "timestamp": "2026-07-02T06:54:12.945Z",
+  "retry_count": 1
+}
