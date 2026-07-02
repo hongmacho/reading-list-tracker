@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Navigation } from "@/components/Navigation";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -17,12 +18,10 @@ export default function RootLayout({
   return (
     <html lang="ko" suppressHydrationWarning>
       <body>
-        <div className="flex h-screen bg-gray-50 dark:bg-gray-900">
-          {/* Main content */}
-          <main className="flex-1 overflow-auto">
-            {children}
-          </main>
-        </div>
+        <Navigation />
+        <main className="pt-20 bg-gray-50 dark:bg-gray-900 min-h-screen">
+          {children}
+        </main>
       </body>
     </html>
   );
