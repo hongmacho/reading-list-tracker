@@ -44,3 +44,7 @@ yarn-error.log*
 # OS
 .DS_Store
 Thumbs.db
+
+# OMC/세션 상태
+.omc/
+tsconfig.tsbuildinfo

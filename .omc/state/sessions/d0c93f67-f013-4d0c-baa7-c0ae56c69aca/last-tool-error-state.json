@@ -1,7 +1,0 @@
-{
-  "tool_name": "Bash",
-  "tool_input_preview": "{\"command\":\"npm run type-check 2>&1 && npm run lint 2>&1\",\"timeout\":120000}",
-  "error": "Exit code 2\n\n> reading-list-tracker@1.0.0 type-check\n> tsc --noEmit\n\n\n> reading-list-tracker@1.0.0 lint\n> eslint .\n\n\nOops! Something went wrong! :(\n\nESLint: 10.6.0\n\nSyntaxError: Error while loading rule '@next/next/no-html-link-for-pages': Invalid regular expression: /^/api/books/\\((?!.+?\\..+?).*?)$/: Unmatched ')'\nOccurred while linting /Users/hongpaul/develop/project-persnol/claude-auto-idea/projects/reading-list-tracker/app/api/books/route.ts\n    at new RegExp (<anonymous>)\n    at /Users/hong...",
-  "timestamp": "2026-07-02T06:47:42.913Z",
-  "retry_count": 1
-}
